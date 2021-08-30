@@ -1,0 +1,50 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .nao-imprimir{
+    visibility: hidden!important;
+  }
+  #mySidenav{
+    display: none;
+  }
+  .relatorio-individual, .relatorio-individual * {
+    visibility: visible;
+    -webkit-print-color-adjust: exact;
+  }
+  .form-avaliacao, .form-avaliacao * {
+    visibility:visible;
+    -webkit-print-color-adjust: exact;
+    min-width: auto!important;
+    margin: 0; 
+     
+               
+  }
+   .media-consenso,.media-consenso * {
+    visibility:visible;
+    -webkit-print-color-adjust: exact;
+    min-width: auto!important;
+    margin: 0.5; 
+    
+
+               
+  }
+
+
+  .slideform-slide{
+    visibility: visible;
+    opacity:1!important;
+    display:block!important;
+    page-break-inside: avoid;
+  }
+  .rel-indiv-indicadores{
+    page-break-inside: avoid;
+    margin-top:10%;
+  }
+  .rel-indiv-itens{
+    page-break-after: always;
+  }
+  .slideform-btn{
+    display: none!important;
+  }
+}

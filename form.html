@@ -1,0 +1,1348 @@
+     <!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/avaliacao.css">
+      <link rel="stylesheet" type="text/css" href="css/slideform.css">
+      <link rel="stylesheet" type="text/css" href="css/print.css">
+      <style type="text/css"></style>
+   </head>
+   <body style="background-color: #F8F8FF;">
+    
+                        <div class="container form-avaliacao">
+                           <div style="padding: 10px 0 0 5px; margin: 0">
+                              <h6>Formulário de Avaliação</h6>
+                           </div>
+                           <hr>
+                           <div class="clearfix"></div>
+                           <h5 align="center">Vamos iniciar sua avaliação abaixo:</h5>
+                           <div class="row">
+                              <div class="col-md-12" style="margin-top: 30px;">
+                                 <div class="container" id="instrucoes">
+                                    <p>Antes de começar, atente para as seguintes instruções:</p>
+                                    <ul>
+                                       <li>Preste atenção na legenda de graus de avaliação. Ela será importante para indicar como avaliar os itens.</li>
+                                       <li>Cada item está nomeado para melhor compreensão. Os itens podem conter sub-itens.</li>
+                                       <li>Você verá duas colunas, mas só estará disponível para preenchimento a que for de acordo com o perfil preenchido no passo anterior.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="row" style="margin-top: 30px;">
+                              <div class="col-md-12">
+                                 <h3 align="center">Graus de Avaliação</h3>
+                                 <div class="row" style="padding-top: 15px;">
+                                    <div class="col-md-3">
+                                       <div class="card text-white bg-success mb-3" style="max-width: 18rem; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">A</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">76%-100%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center;">Em todas as situações avaliadas o requisito foi atendido ou superado.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                       <div class="card text-white mb-3" style="max-width: 18rem; background-color: #91E007; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">B</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">51%-75%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center;">Na maior parte das vezes atendeu ao requisito, mas ainda há algo para melhorar.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                       <div class="card text-white bg-warning mb-3" style="max-width: 18rem; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">C</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">26%-50%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center; ">Pouquissimas das situações avaliadas foram identificadas o atendimento ao requisito.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                       <div class="card text-white bg-danger mb-3" style="max-width: 18rem; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">D</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">1%-25%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center;">Em nenhuma situação avaliada foi identificado atendimento ao requisito.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr>
+                           <form name="form-avaliacao" id="form-avaliacao">
+                            <div class="col-md-5">
+                                       <h6 >Acesso ao formulário apenas com Login </h6>
+                                       
+                                    </div>
+                              <div class="container" style="margin-top: 30px;">
+
+                                 <div class="row">
+                                    
+                                    <div class="col-md-4">
+                                       <label for="form-avaliado">Avaliado:</label>
+                                       <select class="form-control" id="form-avaliado" name="avaliado">
+                                          
+                                       </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <label for="form-avaliador">Avaliador:</label>
+                                       <select class="form-control" id="form-avaliador" name="avaliador">
+                                          <option value="1" disabled selected hidden></option>
+                                       </select>
+                                    </div>
+                                    </div>
+                                    <br><br>
+                                     <div class="row">
+                                      <div class="col-md-4">
+                                        <label for="data">Data:</label><br>
+                                        <input type="date" id="data" name="data" required>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                       <label for="form-tipo">Tipo de resposta:</label>
+                                       <select class="form-control" id="form-tipo" name="avaliador">
+
+                                              <option value="1"> Consenso</option>
+                                              <option value="2" selected>Avaliador</option>
+                                              <option value="3" selected>Avaliado</option>
+                                       </select>
+                                    </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+
+                                    <div class="col-md-4" style="margin-top: 6px">
+                                        <input class="btn btn-primary" id="btnform" onclick="" type="button" value="Iniciar Avaliação">
+                                    </div>
+
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="avaliacao">
+                                                                <!-- ITEM AVALIATIVO 1 -->
+                              <div class="slideform-slide">
+                                    <div class="slideform-group">
+                                        <div class="container avaliacao">
+                                            <h3>Técnicas</h3>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">1.Conhecimento</h6>
+                                                <p>Possui os conhecimentos necessários para o bom andamento de suas atividades.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_11' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_11' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_11' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_11' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_11' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_11' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_11' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_11' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_11' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_11' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_11' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_11' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">2. Habilidade</h6>
+                                                <p>Coloca o conhecimento em prática trazendo os resultados esperados.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_12' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_12' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_12' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_12' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_12' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_12' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_12' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_12' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_12' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_12' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_12' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_12' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <!-- ITEM AVALIATIVO 2 -->
+                              <div class="slideform-slide">
+                                    <div class="slideform-group">
+                                        <div class="container avaliacao">
+                                            <h5>Organizacionais</h5>
+                                            <br>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">3. Foco em Resultados</h6>
+                                                <p>Assume as tarefas estabelecidas, preocupando-se em dar o retorno solicitado, viabilizando o cumprimento dos prazos, metas e instruções.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_21' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_21' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_21' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_21' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_21' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_21' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_21' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_21' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_21' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_21' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_21' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_21' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">4. Integridade</h6>
+                                                <p>Realiza as atividades e se relaciona com honestidade, transparência, respeito e imparcialidade.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_22' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_22' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_22' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_22' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_22' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_22' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_22' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_22' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_22' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_22' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_22' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_22' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">5. Criatividade</h6>
+                                                <p>Apresenta soluções inesperadas ou inovadoras para solucionar problemas, quando necessário.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_23' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_23' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_23' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_23' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_23' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_23' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_23' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_23' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_23' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_23' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_23' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_23' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">6. Empatia</h6>
+                                                <p>Compreende o outro, a fim de ter uma melhor negociação e/ou relacionamento interpessoal.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_24' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_24' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_24' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_24' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_24' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_24' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_24' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_24' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_24' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_24' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_24' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_24' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">7. Relacionamento Interpessoal</h6>
+                                                <p>Se relaciona de forma construtiva com a equipe, demonstrando respeito, consideração, promovendo a integração e união de todos.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_25' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_25' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_25' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_25' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_25' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_25' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_25' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_25' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_25' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_25' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_25' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_25' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <!-- ITEM AVALIATIVO 3 -->
+                              <div class="slideform-slide">
+                                    <div class="slideform-group">
+                                        <div class="container avaliacao">
+                                            <h5> Operacionais</h5>
+                                            <br>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">8. Cortesia</h6>
+                                                <p>Interage com atenção e gentileza, com clientes internos e externos, demonstrando prontidão em colaborar com o outro, independente dos processos, pressões e dificuldades no trabalho/pessoais.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_31' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_31' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_31' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_31' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_31' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_31' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_31' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_31' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_31' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_31' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_31' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_31' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">9. Proatividade</h6>
+                                                <p>Se antecipa aos fatos, identificando oportunidades e ameaças, desenvolvendo soluções e alternativas para melhores resultados.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_32' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_32' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_32' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_32' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_32' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_32' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_32' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_32' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_32' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_32' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_32' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_32' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">10. Disciplina</h6>
+                                                <p>Valoriza as normas e procedimentos, cumprindo-as dentro dos padrões de conformidade.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_33' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_33' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_33' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_33' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_33' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_33' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_33' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_33' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_33' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_33' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_33' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_33' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <!-- ITEM AVALIATIVO 4 -->
+                              <div class="slideform-slide">
+                                    <div class="slideform-group">
+                                        <div class="container avaliacao">
+                                          <div id="lideranca" style= "display:none;">
+                                            <h5> Liderança</h5>
+                                            <br>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">11. Tomada de Decisão</h6>
+                                                <p>Responde com agilidade e assertividade nas decisões difíceis, em situações imprevistas ou de risco</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_41' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_41' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_41' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_41' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_41' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_41' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_41' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_41' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_41' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_41' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_41' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_41' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">12. Visão Sistêmica</h6>
+                                                <p>Compreende as reações e impactos existentes entre ações realizadas dentro e fora da sua área, percebendo a interdependência das áreas, analisando o contexto institucional, relação clientes/fornecedores, mercado e sociedade.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_42' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_42' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_42' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_42' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_42' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_42' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_42' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_42' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_42' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_42' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_42' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_42' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">13. Negociação</h6>
+                                                <p>Cria estratégias de comunicação e argumentação eficaz para negociar assuntos diversos com clientes internos/externos, fornecedores e/ou entidades diversas, visando buscar equilíbrio de interesses entre as partes para atingir resultados.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_43' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_43' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_43' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_43' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_43' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_43' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_43' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_43' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_43' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_43' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_43' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_43' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <h6 class="label-pergunta">14. Gestão de Equipe</h6>
+                                                <p>Alcança objetivos através da delegação de responsabilidades e tarefas, mediando conflitos interpessoais, identificando pontos de melhoria, dirigindo e influenciando positivamente sua equipe.</p>
+                                                <div class="container row">
+                                                    <div class="col-md-4 avaliado-control"> <span class="badge badge-primary" style="font-size: 13px;">Avaliado</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliado-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliado_44' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_44' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_44' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliado_44' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 avaliador-control">    <span class="badge badge-success" style="font-size: 13px;">Avaliador</span>
+                                                    </div>
+                                                    <div class="col-md-6 avaliador-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='avaliador_44' type='radio' value=A required>   <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_44' type='radio' value=B>    <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_44' type='radio' value=C>    <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='avaliador_44' type='radio' value=D>    <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 consenso-control"> <span class="badge badge-secondary" style="font-size: 13px;">Consenso</span>
+                                                    </div>
+                                                    <div class="col-md-6 consenso-control">
+                                                        <div class='vertical-align'>
+                                                            <div class='btns'>
+                                                                <label>
+                                                                    <input name='consenso_44' type='radio' value=A required>    <span class='btn first'>A</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_44' type='radio' value=B> <span class='btn'>B</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_44' type='radio' value=C> <span class='btn'>C</span>
+                                                                    </input>
+                                                                </label>
+                                                                <label>
+                                                                    <input name='consenso_44' type='radio' value=D> <span class='btn last'>D</span>
+                                                                    </input>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="row" >
+                                           <div class="col-md-6" >
+                                        <input align="left" class="btn btn-primary" type="submit" name="confirmar" id="btn-avaliacao" value="Enviar">
+                                    </div>
+                                     <div class="col-md-6" >
+                                        <input  class="btn btn-primary" onclick="fechaForm();" type="button"  value="Fechar Formulário">
+                                    </div>
+                                  </div>
+                                            
+                                           </div>
+                                        </div>
+                                    </div>
+                                 </div>   
+                              </div>
+                           </form>
+                           <br>
+                           <div align="center" class="media-consenso" >
+
+                             <h5>Resultado da Avaliação</h5>
+                             <br> 
+                           <div class="col-md-3">
+                                       <div class="card text-white bg-success mb-3" id= "mediaA" style="max-width: 18rem; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">A</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">76%-100%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center;">Em todas as situações avaliadas o requisito foi atendido ou superado.</p>
+                                          </div>
+                                       </div>
+                          </div>
+                             <div class="col-md-3">
+                                       <div class="card text-white mb-3" id= "mediaB" style="max-width: 18rem; background-color: #91E007; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">B</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">51%-75%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center;">Na maior parte das vezes atendeu ao requisito, mas ainda há algo para melhorar.</p>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="col-md-3">
+                                       <div class="card text-white bg-warning mb-3" id= "mediaC" style="max-width: 18rem; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">C</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">26%-50%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center; ">Pouquissimas das situações avaliadas foram identificadas o atendimento ao requisito.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                               <div class="col-md-3">
+                                       <div class="card text-white bg-danger mb-3" id= "mediaD" style="max-width: 18rem; margin: 0 auto;">
+                                          <div class="card-header">
+                                             <h1 align="center">D</h1>
+                                             <p style="text-align: center; font-size: 12px; margin: 0; padding: 0;">1%-25%</p>
+                                          </div>
+                                          <div class="card-body">
+                                             <p class="card-text" style="font-size: 12px; text-align: center;">Em nenhuma situação avaliada foi identificado atendimento ao requisito.</p>
+                                          </div>
+                                       </div>
+                                </div>
+                                 <div class="row" >
+
+                                    <div class="col-md-6" >
+                                        <input align="center" class="btn btn-primary" onclick="window.print();" type="button" value="Imprimir">
+                                    </div>
+                                    <div class="col-md-6" >
+                                        <input align="center" class="btn btn-primary"  onclick="fechaForm();" type="button"  value="Fechar Formulário">
+                                    </div>
+                                </div>
+                                <br><br>
+                        </div>
+                        
+</body>
+</htm>

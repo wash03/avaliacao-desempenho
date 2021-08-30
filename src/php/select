@@ -1,0 +1,21 @@
+<?php
+include_once("form.class.php");
+include_once("conn.class.php");
+
+if(isset($_POST['avaliado'])&& isset($_POST['avaliador'])){
+	$conn= new ConnBD();
+	$form = new Form($_POST['avaliado'],$_POST['avaliador']);
+	$conn= new ConnBD();
+	$resp=$form->carregaForm($conn);
+    echo($resp);
+    
+}
+else{
+	echo("Erro!");
+}
+
+
+
+
+
+?>
